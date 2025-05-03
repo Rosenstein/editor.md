@@ -21,7 +21,7 @@
 - Support [TeX (LaTeX expressions, Based on KaTeX)](https://pandao.github.io/editor.md/examples/katex.html), [Flowchart](https://pandao.github.io/editor.md/examples/flowchart.html) and [Sequence Diagram](https://pandao.github.io/editor.md/examples/sequence-diagram.html) of Markdown extended syntax;
 - Support AMD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
 
-[README & Examples (English)](https://pandao.github.io/editor.md/en.html)
+[README & Examples (English)](https://rosenstein.github.io/editor.md/en.htm)
   
 
 --------
