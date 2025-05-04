@@ -183,11 +183,11 @@
                 });
                 
                 $("#get-md-btn").bind('click', function(){
-                    alert(testEditor.getMarkdown());
+                    prompt("Copy to clipboard: Ctrl+C", testEditor.getMarkdown());
                 });
                 
                 $("#get-html-btn").bind('click', function() {
-                    alert(testEditor.getHTML());
+                    prompt("Copy to clipboard: Ctrl+C", testEditor.getHTML());
                 });                
                 
                 $("#watch-btn").bind('click', function() {
