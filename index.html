@@ -105,6 +105,7 @@
                 <button id="goto-line-btn">Goto line 90</button>
                 <button id="show-btn">Show editor</button>
                 <button id="hide-btn">Hide editor</button>
+                <button id="clear-btn">Clear editor</button>
                 <button id="get-md-btn">Get Markdown</button>
                 <button id="get-html-btn">Get HTML</button>
                 <button id="watch-btn">Watch</button>
@@ -180,6 +181,9 @@
                 
                 $("#hide-btn").bind('click', function(){
                     testEditor.hide();
+                });
+                $("#clear-btn").bind('click', function(){
+                    testEditor.clear();
                 });
                 
                 $("#get-md-btn").bind('click', function(){
