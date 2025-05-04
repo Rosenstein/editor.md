@@ -1,109 +1,114 @@
+### Features
+
+- Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);
+- Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;
+- Markdown Extras : Support ToC (Table of Contents), Emoji, Task lists, @Links...;
+- Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;
+- Support identification, interpretation, fliter of the HTML tags;
+- Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;
+- Support AMD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
+
 # Editor.md
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
-**目录 (Table of Contents)**
+
+**Table of Contents**
 
 [TOCM]
 
 [TOC]
 
-# Heading 1
-## Heading 2               
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
-# Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-## Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-### Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-#### Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
-##### Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-###### Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+#H1 header
+##H2 header
+###H3 header
+####H4 header
+#####H5 header
+######H6 header
+#Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+##Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+###Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+####Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
+#####Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+######Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")
 
-#### 标题（用底线的形式）Heading (underline)
+##Headers (Underline)
 
-This is an H1
+H1 Header (Underline)
 =============
 
-This is an H2
+H2 Header (Underline)
 -------------
 
-### 字符效果和横线等
+###Characters
                 
 ----
 
-~~删除线~~ <s>删除线（开启识别HTML标签时）</s>
-*斜体字*      _斜体字_
-**粗体**  __粗体__
-***粗斜体*** ___粗斜体___
+~~Strikethrough~~ <s>Strikethrough (when enable html tag decode.)</s>
+*Italic*      _Italic_
+**Emphasis**  __Emphasis__
+***Emphasis Italic*** ___Emphasis Italic___
 
-上标：X<sub>2</sub>，下标：O<sup>2</sup>
+Superscript: X<sub>2</sub>，Subscript: O<sup>2</sup>
 
-**缩写(同HTML的abbr标签)**
-
-> 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启
+**Abbreviation(link HTML abbr tag)**
 
 The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.
 
-### 引用 Blockquotes
+###Blockquotes
 
-> 引用文本 Blockquotes
+> Blockquotes
 
-引用的行内混合 Blockquotes
+Paragraphs and Line Breaks
                     
-> 引用：如果想要插入空白换行`即<br />标签`，在插入处先键入两个以上的空格然后回车即可，[普通链接](http://localhost/)。
+> "Blockquotes Blockquotes", [Link](http://localhost/)。
 
-### 锚点与链接 Links
+###Links
 
-[普通链接](http://localhost/)
+[Links](http://localhost/)
 
-[普通链接带标题](http://localhost/ "普通链接带标题")
+[Links with title](http://localhost/ "link title")
 
-直接链接：<https://github.com>
+`<link>` : <https://github.com>
 
-[锚点链接][anchor-id] 
+[Reference link][id/name] 
 
-[anchor-id]: http://www.this-anchor-link.com/
+[id/name]: http://link-url/
 
-[mailto:test.test@gmail.com](mailto:test.test@gmail.com)
+GFM a-tail link @pandao
 
-GFM a-tail link @pandao  邮箱地址自动链接 test.test@gmail.com  www@vip.qq.com
+###Code Blocks (multi-language) & highlighting
 
-> @pandao
+####Inline code
 
-### 多语言代码高亮 Codes
+`$ npm install marked`
 
-#### 行内代码 Inline code
+####Code Blocks (Indented style)
 
-执行命令：`npm install marked`
-
-#### 缩进风格
-
-即缩进四个空格，也做为实现类似 `<pre>` 预格式化文本 ( Preformatted Text ) 的功能。
+Indented 4 spaces, like `<pre>` (Preformatted Text).
 
     <?php
         echo "Hello world!";
     ?>
     
-预格式化文本：
+Code Blocks (Preformatted text):
 
     | First Header  | Second Header |
     | ------------- | ------------- |
     | Content Cell  | Content Cell  |
     | Content Cell  | Content Cell  |
 
-#### JS代码　
+####Javascript　
 
 ```javascript
-function test() {
+function test(){
 	console.log("Hello world!");
 }
  
 (function(){
-    var box = function() {
+    var box = function(){
         return box.fn.init();
     };
 
@@ -114,13 +119,13 @@ function test() {
 			return this;
         },
 
-		add : function(str) {
+		add : function(str){
 			alert("add", str);
 
 			return this;
 		},
 
-		remove : function(str) {
+		remove : function(str){
 			alert("remove", str);
 
 			return this;
@@ -136,29 +141,22 @@ var testBox = box();
 testBox.add("jQuery").remove("jQuery");
 ```
 
-#### HTML 代码 HTML codes
+####HTML code
 
 ```html
 <!DOCTYPE html>
 <html>
     <head>
         <mate charest="utf-8" />
-        <meta name="keywords" content="Editor.md, Markdown, Editor" />
         <title>Hello world!</title>
-        <style type="text/css">
-            body{font-size:14px;color:#444;font-family: "Microsoft Yahei", Tahoma, "Hiragino Sans GB", Arial;background:#fff;}
-            ul{list-style: none;}
-            img{border:none;vertical-align: middle;}
-        </style>
     </head>
     <body>
-        <h1 class="text-xxl">Hello world!</h1>
-        <p class="text-green">Plain text</p>
+        <h1>Hello world!</h1>
     </body>
 </html>
 ```
 
-### 图片 Images
+###Images
 
 Image:
 
@@ -168,69 +166,51 @@ Image:
 
 ![](https://pandao.github.io/editor.md/examples/images/8.jpg)
 
-> 图为：厦门白城沙滩
+> 图为：厦门白城沙滩 Xiamen
 
 图片加链接 (Image + Link)：
 
-[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/images/7.jpg "李健首张专辑《似水流年》封面")
+[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/examples/images/7.jpg "李健首张专辑《似水流年》封面")
 
 > 图为：李健首张专辑《似水流年》封面
                 
 ----
 
-### 列表 Lists
+###Lists
 
-#### 无序列表（减号）Unordered Lists (-)
-                
-- 列表一
-- 列表二
-- 列表三
+####Unordered list (-)
+
+- Item A
+- Item B
+- Item C
      
-#### 无序列表（星号）Unordered Lists (*)
+####Unordered list (*)
 
-* 列表一
-* 列表二
-* 列表三
+* Item A
+* Item B
+* Item C
 
-#### 无序列表（加号和嵌套）Unordered Lists (+)
+####Unordered list (plus sign and nested)
                 
-+ 列表一
-+ 列表二
-    + 列表二-1
-    + 列表二-2
-    + 列表二-3
-+ 列表三
-    * 列表一
-    * 列表二
-    * 列表三
++ Item A
++ Item B
+    + Item B 1
+    + Item B 2
+    + Item B 3
++ Item C
+    * Item C 1
+    * Item C 2
+    * Item C 3
 
-#### 有序列表 Ordered Lists (-)
+####Ordered list
                 
-1. 第一行
-2. 第二行
-3. 第三行
-
-#### GFM task list
-
-- [x] GFM task list 1
-- [x] GFM task list 2
-- [ ] GFM task list 3
-    - [ ] GFM task list 3-1
-    - [ ] GFM task list 3-2
-    - [ ] GFM task list 3-3
-- [ ] GFM task list 4
-    - [ ] GFM task list 4-1
-    - [ ] GFM task list 4-2
+1. Item A
+2. Item B
+3. Item C
                 
 ----
                     
-### 绘制表格 Tables
-
-| 项目        | 价格   |  数量  |
-| --------   | -----:  | :----:  |
-| 计算机      | $1600   |   5     |
-| 手机        |   $12   |   12   |
-| 管线        |    $1    |  234  |
+###Tables
                     
 First Header  | Second Header
 ------------- | -------------
@@ -247,21 +227,21 @@ Content Cell  | Content Cell
 | `help()`      | Display the help window.       |
 | `destroy()`   | **Destroy your computer!**     |
 
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
-
 | Item      | Value |
 | --------- | -----:|
 | Computer  | $1600 |
 | Phone     |   $12 |
 | Pipe      |    $1 |
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
                 
 ----
 
-#### 特殊符号 HTML Entities Codes
+####HTML entities
 
 &copy; &  &uml; &trade; &iexcl; &pound;
 &amp; &lt; &gt; &yen; &euro; &reg; &plusmn; &para; &sect; &brvbar; &macr; &laquo; &middot; 
@@ -270,13 +250,29 @@ X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;
 
 18&ordm;C  &quot;  &apos;
 
-[========]
+##Escaping for Special Characters
 
-### Emoji表情 :smiley:
+\*literal asterisks\*
+
+##Markdown extras
+
+###GFM task list
+
+- [x] GFM task list 1
+- [x] GFM task list 2
+- [ ] GFM task list 3
+    - [ ] GFM task list 3-1
+    - [ ] GFM task list 3-2
+    - [ ] GFM task list 3-3
+- [ ] GFM task list 4
+    - [ ] GFM task list 4-1
+    - [ ] GFM task list 4-2
+
+###Emoji mixed :smiley:
 
 > Blockquotes :star:
 
-#### GFM task lists & Emoji & fontAwesome icon emoji & editormd logo emoji :editormd-logo-5x:
+####GFM task lists & Emoji & fontAwesome icon emoji & editormd logo emoji :editormd-logo-5x:
 
 - [x] :smiley: @mentions, :smiley: #refs, [links](), **formatting**, and <del>tags</del> supported :editormd-logo:;
 - [x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;
@@ -285,75 +281,31 @@ X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;
 - [ ] [ ]this is an incomplete item :fa-star: :fa-gear:;
     - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;
     - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);
- 
-#### 反斜杠 Escape
-
-\*literal asterisks\*
-
-[========]
             
-### 科学公式 TeX(KaTeX)
-
+###TeX(LaTeX)
+   
 $$E=mc^2$$
 
-行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。
-
-$$x > y$$
+Inline $$E=mc^2$$ Inline，Inline $$E=mc^2$$ Inline。
 
 $$\(\sqrt{3x-1}+(1+x)^2\)$$
                     
 $$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$
-
-多行公式：
-
-```math
-\displaystyle
-\left( \sum\_{k=1}^n a\_k b\_k \right)^2
-\leq
-\left( \sum\_{k=1}^n a\_k^2 \right)
-\left( \sum\_{k=1}^n b\_k^2 \right)
-```
-
-```katex
-\displaystyle 
-    \frac{1}{
-        \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
-        \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
-        1+\frac{e^{-6\pi}}
-        {1+\frac{e^{-8\pi}}
-         {1+\cdots} }
-        } 
-    }
-```
-
-```latex
-f(x) = \int_{-\infty}^\infty
-    \hat f(\xi)\,e^{2 \pi i \xi x}
-    \,d\xi
-```
-
-### 分页符 Page break
-
-> Print Test: Ctrl + P
-
-[========]
-
-### 绘制流程图 Flowchart
+                
+###FlowChart
 
 ```flow
-st=>start: 用户登陆
-op=>operation: 登陆操作
-cond=>condition: 登陆成功 Yes or No?
-e=>end: 进入后台
+st=>start: Login
+op=>operation: Login operation
+cond=>condition: Successful Yes or No?
+e=>end: To admin
 
 st->op->cond
 cond(yes)->e
 cond(no)->op
 ```
 
-[========]
-                    
-### 绘制序列图 Sequence Diagram
+###Sequence Diagram
                     
 ```seq
 Andrew->China: Says Hello 
@@ -362,4 +314,4 @@ China-->Andrew: How are you?
 Andrew->>China: I am good thanks!
 ```
 
-### End
+###End
