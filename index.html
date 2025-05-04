@@ -93,8 +93,7 @@
     <body>
         <div id="layout">
             <header>
-                <h1>完整示例</h1>
-                <p>Full example</p>
+                <h1>Full example</h1>
                 <ul style="margin: 10px 0 0 18px;">
                     <li>Enable HTML tags decode</li>
                     <li>Enable TeX, Flowchart, Sequence Diagram, Emoji, FontAwesome, Task lists</li>
@@ -154,7 +153,7 @@
                         //dialogDraggable : false,    // 设置弹出层对话框不可拖动，全局通用，默认为true
                         //dialogMaskOpacity : 0.4,    // 设置透明遮罩层的透明度，全局通用，默认值为0.1
                         //dialogMaskBgColor : "#000", // 设置透明遮罩层的背景颜色，全局通用，默认为#fff
-                        imageUpload : true,
+                        imageUpload : false,
                         imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
                         imageUploadURL : ".examples/php/upload.php",
                         onload : function() {
@@ -218,7 +217,7 @@
                 $("#toc-menu-btn").click(function(){
                     testEditor.config({
                         tocDropdown   : true,
-                        tocTitle      : "目录 Table of Contents",
+                        tocTitle      : "Table of Contents",
                     });
                 });
                 
