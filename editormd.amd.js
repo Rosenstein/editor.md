@@ -3434,7 +3434,7 @@
 
     // Emoji graphics files url path
     editormd.emoji     = {
-        path  : "https://github.githubassets.com/images/icons/emoji/",
+        path  : "https://raw.githubusercontent.com/pranabdas/github-emojis/refs/heads/main/assets/png/",
         ext   : ".png"
     };
 
@@ -3536,9 +3536,9 @@
                         }
                         else
                         {
-                            var src = (name === "+1") ? "plus1" : name;
-                            src     = (src === "black_large_square") ? "black_square" : src;
-                            src     = (src === "moon") ? "waxing_gibbous_moon" : src;
+                            var src = /*(name === "+1") ? "plus1" : */name;
+                            //src     = (src === "black_large_square") ? "black_square" : src;
+                            //src     = (src === "moon") ? "waxing_gibbous_moon" : src;
 
                             return "<img src=\"" + editormd.emoji.path + src + editormd.emoji.ext + "\" class=\"emoji\" title=\"&#58;" + name + "&#58;\" alt=\"&#58;" + name + "&#58;\" />";
                         }
