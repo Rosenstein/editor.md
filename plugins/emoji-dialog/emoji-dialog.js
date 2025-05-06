@@ -139,7 +139,7 @@
 				});
 			}
 			
-			var category = ["Github emoji", "Twemoji", "Font awesome", "Editor.md logo"];
+			var category = ["Github emoji v16.0", "Twemoji v14.0", "Font awesome", "Editor.md logo"];
 			var tab      = dialog.find("." + classPrefix + "tab");
 
 			if (tab.html() === "") 
